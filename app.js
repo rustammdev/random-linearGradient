@@ -47,6 +47,7 @@ function setGradient() {
 setGradient()
 container.addEventListener("click", () => {
     setGradient()
+    btn.textContent = "Copy"
 })
 
 const btn = document.querySelector('.btn')

@@ -14,9 +14,9 @@ body {
     height: 100vh;
     gap: 12px;
 }
-.container {
-    background-color: #988f8f;
-    color: black;
+body .container {
+    background-color: transparent;
+    border: 1px solid #e3e3e3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ body {
 .container:hover {
     -webkit-box-shadow: 1px 3px 20px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 1px 3px 20px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 1px 3px 20px 0px rgba(28, 47, 62, 0.2);
+    box-shadow: 1px 3px 20px 0px rgba(25, 36, 44, 0.2);
     transform: scale(1.001);
 }
 .container h1 {

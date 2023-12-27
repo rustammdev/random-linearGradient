@@ -47,7 +47,6 @@ function setGradient() {
 setGradient()
 container.addEventListener("click", () => {
     setGradient()
-    btn.textContent = "Copy"
 })
 
 const btn = document.querySelector('.btn')
@@ -55,4 +54,7 @@ const btn = document.querySelector('.btn')
 btn.addEventListener("click", () => {
     navigator.clipboard.writeText(textColor.textContent)
     btn.textContent = "Copied!"
+    setTimeout(() => {
+        btn.textContent = "Copy"
+    }, 1500);
 })

@@ -39,6 +39,21 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
 }
+
+.copyCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 1px 4px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+
 @media (max-width: 460px){
     .container h1 {
         font-size: 16px;

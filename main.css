@@ -5,8 +5,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
 body {
     display: flex;
     align-items: center;
@@ -16,7 +14,6 @@ body {
     height: 100vh;
     gap: 12px;
 }
-
 .container {
     background-color: #988f8f;
     color: black;
@@ -35,16 +32,13 @@ body {
     box-shadow: 1px 3px 20px 0px rgba(28, 47, 62, 0.2);
     transform: scale(1.001);
 }
-
 .container h1 {
     font-weight: 500;
 }
-
 #color-text {
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
 }
-
 @media (max-width: 460px){
     .container h1 {
         font-size: 16px;

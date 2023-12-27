@@ -39,11 +39,7 @@ function setGradient() {
     let color2 = getGradient()
 
     let deg = Math.trunc(Math.random() * 360)
-    let bgColor = `linear-gradient(
-        ${deg}deg,
-        ${color1},
-        ${color2}
-    )`
+    let bgColor = `linear-gradient(${deg}deg, ${color1}, ${color2})`
     body.style.background = bgColor
     textColor.textContent = bgColor
 }
@@ -51,4 +47,11 @@ function setGradient() {
 setGradient()
 container.addEventListener("click", () => {
     setGradient()
+})
+
+const btn = document.querySelector('.btn')
+
+btn.addEventListener("click", () => {
+    navigator.clipboard.writeText(textColor.textContent)
+    btn.textContent = "Copied!"
 })
